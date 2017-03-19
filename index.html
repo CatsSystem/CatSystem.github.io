@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="zh-cmn-Hans">
+<head>
+    <title>CatSystem 主页</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CatSystem Home Page">
+    <meta name="author" content="Lancelot">
+
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">CatSystem</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">主页</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">关于</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">特性</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#docs">文档</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#license">许可</a></li>
+                        <li class="nav-item last"><a class="scrollto" href="#contact">联系我</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title"><span class="highlight">Cat</span>System</h2>
+            <p class="intro">基于Swoole的高性能开发套件</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="https://catssystem.gitbooks.io/catdocs/content/"
+                   target="_blank">文档</a>
+                <a class="btn btn-cta-primary" href="https://github.com/CatsSystem" target="_blank">下载</a>
+            </div>
+            <ul class="meta list-inline">
+                <li><a href="https://github.com/CatsSystem" target="_blank">View on GitHub</a></li>
+                <li>Created by: <a href="http://www.catplanet.com/" target="_blank">会敲代码的喵(Lancelot)</a></li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+    </section><!--//promo-->
+    
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">什么是CatSystem?</h2>
+            <p class="intro text-center">CatSystem
+                是一套基于Swoole开发的高性能PHP服务开发套件。其中包括基于Http协议的API开发框架、基于RPC的微服务框架、分布式服务管理框架、服务管理数据面板等等一系列组件。
+                所有的这些开发套件都基于<a href="https://getcomposer.org/">Composer</a>进行管理，因此开发者可以很便捷地在项目中引用它们。
+            </p>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-cloud"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatAPI</h3>
+                        <p>
+                            基于Swoole Http Server的高性能API开发框架，支持PATHINFO格式路由，使用JSON作为协议序列化格式，使用CatCore提供组件服务，适用于快速开发接口服务。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-send"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatMicro</h3>
+                        <p>
+                            基于RPC协议的微服务框架，提供Thrift、Hprose、Swoole Serialize三种序列化方式，使用Thrift
+                            IDL作为接口定义语言，可以通过配置实现一套代码支持多种序列化方式的请求。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-server"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatCenter</h3>
+                        <p>
+                            基于etcd（一个分布式的、可靠的key-value存储服务，用于存储分布式系统的核心数据）的分布式服务管理框架，提供服务管理、配置下发、服务监控等一系列服务治理功能。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-bar-chart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatDashboard</h3>
+                        <p>
+                            CatCenter服务管理框架的数据面板，提供基础的服务管理、监控等相关数据展示，也可轻松实现业务定制化，开发针对特定业务的数据面板。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatCore</h3>
+                        <p>
+                            核心组件封装，提供了基于Swoole的异步客户端、定时器、配置、日志等组件封装，内置协程支持。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tasks"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CatQueue</h3>
+                        <p>
+                            消息队列的封装，配合Cat Micro使用，适用于服务解耦、HA高可用方案、请求重放等需求。
+                        </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">特性</h2>
+            <ul class="feature-list list-unstyled">
+                <li><i class="fa fa-check"></i> 高性能</li>
+                <li><i class="fa fa-check"></i> 支持协程（Promise + yield）</li>
+                <li><i class="fa fa-check"></i> 基于<a href="http://www.swoole.com/" target="_blank">Swoole</a>构建</li>
+                <li><i class="fa fa-check"></i> 基于Composer包管理</li>
+                <li><i class="fa fa-check"></i> 开发便捷，可扩展性好</li>
+                <li><i class="fa fa-check"></i> 支持Docker部署</li>
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******DOCS****** --> 
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">文档</h2>
+
+            <div class="block">
+                <p class="text-center">
+                    <a class="btn btn-cta-primary" href="https://catssystem.gitbooks.io/catdocs/content/" target="_blank">More on GitHub</a>
+                </p>
+            </div><!--//block-->
+            
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******LICENSE****** --> 
+    <section id="license" class="license section">
+        <div class="container">
+            <div class="license-inner">
+            <h2 class="title text-center">许可</h2>
+                <div class="info">
+                    <p>
+                        Licensed under the <strong>Apache License</strong>, Version 2.0 (the "License");
+                        you may not use this file except in compliance with the License.
+                        You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">LICENSE-2.0</a>
+                        <br>
+                        <br>
+                        Unless required by applicable law or agreed to in writing, software
+                        distributed under the License is distributed on an "AS IS" BASIS,
+                        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+                        See the License for the specific language governing permissions and
+                        limitations under the License.
+                    </p>
+                </div><!--//info-->
+                <div class="cta-container">
+                    <div class="speech-bubble">                    
+                        <p class="intro">如果你觉得这组套件很好用并且想要支持我，可以使用微信扫描下方二维码给作者捐赠</p>
+                    </div><!--//speech-bubble-->
+                    <div class="btn-container  text-center">
+                        <img alt="" border="0" src="http://7xqj6q.com1.z0.glb.clouddn.com/wechat.png" width="150px" height="150px">
+                    </div><!--//btn-container-->
+                </div><!--//cta-container-->
+            </div><!--//license-inner-->
+        </div><!--//container-->
+    </section><!--//how-->
+    
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">联系我</h2>
+                <p class="intro  text-center">如果你在使用当中遇到任何问题或者想要提出意见和建议，可以通过以下方式联系我</p>
+
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                        <li><a href="https://github.com/LinkedDestiny" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="http://www.catplanet.me/" target="_blank"><i class="fa fa-home"></i></a></li>
+                        <li
+                                class="last"><a href="mailto:lancelot2014@foxmail.com"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>   
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script>       
+</body>
+</html> 
+
